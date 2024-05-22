@@ -1,0 +1,17 @@
+
+<h1>Edite um produto</h1>
+<form action="/produtos/{{produto.id}}/edit" method="post">
+  <label for="id">Id:</label><br>
+  <input type="text" id="id" name="id" value="{{produto.id}}"><br>
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome" value="{{produto.nome}}"><br><br>
+  <label for="promocao">promocao:</label><br>
+  <input type="text" id="promocao" name="promocao" value="{{produto.promocao}}"><br><br>
+  <label for="desconto">desconto:</label><br>
+  <input type="text" id="desconto" name="desconto" value="{{produto.desconto}}"><br><br>
+  <label for="preco">preço:</label><br>
+  <input type="text" id="preco" name="preco" value="{{produto.preco}}"><br><br>
+  <label for="valorPromocao">Valor promocional:</label><br>
+  <input type="text" id="valorPromocao" name="valorPromocao" value="{{produto.valorPromocao}}"><br><br>
+  <input type="submit" value="Atualizar">
+</form> 
