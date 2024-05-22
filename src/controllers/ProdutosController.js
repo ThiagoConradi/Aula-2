@@ -11,11 +11,11 @@ class ProdutosController {
   create(req, res) {
     let nome = req.body.nome;
     let preco = req.body.preco;
-    // Inserir as outras propriedades de produto aqui
+    let desconto = req.body.desconto;
 
-    let produto = new Produto(nome, preco);
+    let produto = new Produto({ nome, preco, desconto });
     ProdutosDAO.criar(produto);
-    res.status(201).redirect("/produtos")
+    res.status(201).redirect("/produtos");
   }
 
   // Lista todos os produtos (READ)

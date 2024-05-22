@@ -16,4 +16,7 @@ router.get('/:id', produtosController.show);
 // Rota para deletar um produto específico (DELETE)
 router.post('/delete/:id', produtosController.delete);
 
+// Rota para mostrar um produto (READ)
+router.post('/', produtosController.create);
+
 module.exports = router;

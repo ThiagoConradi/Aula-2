@@ -1,0 +1,21 @@
+<h1>Criando um novo produto</h1>
+
+<h2><b>Preencha os campos </b><abbr title="required"></abbr></h2>
+
+<form method="post" action="/produtos">
+    <div>
+        <label for="nome">Nome do produto:</label>
+        <input type="text" id="nome" name="nome" required>
+    </div>
+
+    <div>
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco" name="preco" required>
+    </div>
+
+    <div>
+        <label for="desconto">Valor do desconto:</label>
+        <input type="text" id="desconto" name="desconto">
+    </div>
+    <button type="submit">Criar produto</button>
+</form>
