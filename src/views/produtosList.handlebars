@@ -1,0 +1,28 @@
+<h1>Lista de produtos</h1>
+
+{{#if produtosSize}}
+<table border="1">
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each produtos}}
+        <tr>
+            <td><a style="color: rgb(23, 117, 204);" href="/produtos/{{this.id}}">{{this.nome}}</a></td>
+            <td>{{this.preco}}</td>
+            <td>
+                <form method="post" , action="/produtos/delete/{{this.id}}">
+                    <button>Excluir um produto</button>
+                </form>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+{{else}}
+<p>Nenhum produto encontrado</p>
+{{/if}}

@@ -1,0 +1,9 @@
+<h1 class="titulo-grande">Descrição dos Produtos</h1>
+
+<h1 class="titulo-produto">Nome: {{produto.nome}}</h1>
+<h2 class="preco">Preço do produto: R${{produto.preco}}</h2>
+{{#if produto.promocao}}
+<h2 class="promocao">O produto está em promoção!</h2>
+{{else}}
+<h2 class="sem-promocao">O produto não está em promoção.</h2>
+{{/if}}
